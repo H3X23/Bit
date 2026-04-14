@@ -1,5 +1,5 @@
 # BİT 
-[GİRİŞ]
+
  BIT, terminal üzerinden hızlı ve detaylı IP sorgulama yapar.
  Termux ve Linux sistemlerde sorunsuz çalışacak şekilde kodlanmıştır.
 
