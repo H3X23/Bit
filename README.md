@@ -11,8 +11,8 @@
 ## BAĞIMLILIKLAR
 Projenin çalışması için 'curl' ve 'jq' paketleri gereklidir.
 Kurmak için:
-Termux: pkg install curl jq -y
-Linux: sudo apt install curl jq -y
+- Termux: pkg install curl jq -y
+- Linux: sudo apt install curl jq -y
 
 ## KURULUM
 1. Dosyaya yetki ver: chmod +x bit.sh
