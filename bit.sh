@@ -55,14 +55,14 @@ echo -e "${Reset}"
 #ANA KISIM
 data=$(curl -s "http://ip-api.com/json/$ip?fields=16982271")
 status=$(echo $data | jq -r '.status')
- #SONUÇ
- echo -e "${Green}--- SONUÇLAR ---${Reset}"
-    echo -e "${Cyan}IP Adresi:   ${White}$(echo $data | jq -r '.query')${Reset}"
-    echo -e "${Cyan}Ülke:        ${White}$(echo $data | jq -r '.country') ($(echo $data | jq -r '.countryCode'))${Reset}"
-    echo -e "${Cyan}Şehir/Bölge: ${White}$(echo $data | jq -r '.city') / $(echo $data | jq -r '.regionName')${Reset}"
-    echo -e "${Cyan}ISP:         ${White}$(echo $data | jq -r '.isp')${Reset}"
-    echo -e "${Cyan}Organizasyon:${White}$(echo $data | jq -r '.org')${Reset}"
-    echo -e "${Cyan}AS Numarası: ${White}$(echo $data | jq -r '.as')${Reset}"
-    echo -e "${Cyan}Koordinat:   ${White}$(echo $data | jq -r '.lat'), $(echo $data | jq -r '.lon')${Reset}"
-    echo -e "${Cyan}Zaman Dilimi:${White}$(echo $data | jq -r '.timezone')${Reset}"
-    echo -e "${Green}----------------${Reset}"
+#SONUÇ
+echo -e "${Green}--- SONUÇLAR ---${Reset}"
+echo -e "${Cyan}IP Adresi:   ${White}$(echo $data | jq -r '.query')${Reset}"
+echo -e "${Cyan}Ülke:        ${White}$(echo $data | jq -r '.country') ($(echo $data | jq -r '.countryCode'))${Reset}"
+echo -e "${Cyan}Şehir/Bölge: ${White}$(echo $data | jq -r '.city') / $(echo $data | jq -r '.regionName')${Reset}"
+echo -e "${Cyan}ISP:         ${White}$(echo $data | jq -r '.isp')${Reset}"
+echo -e "${Cyan}Organizasyon:${White}$(echo $data | jq -r '.org')${Reset}"
+echo -e "${Cyan}AS Numarası: ${White}$(echo $data | jq -r '.as')${Reset}"
+echo -e "${Cyan}Koordinat:   ${White}$(echo $data | jq -r '.lat'), $(echo $data | jq -r '.lon')${Reset}"
+echo -e "${Cyan}Zaman Dilimi:${White}$(echo $data | jq -r '.timezone')${Reset}"
+echo -e "${Green}----------------${Reset}"
