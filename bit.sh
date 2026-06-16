@@ -48,9 +48,7 @@ echo -e """
 """
 #İP İSTE
 
-echo -e "${BYellow} hedef ip adresini girin :"
-read  ip
-echo -e "${Reset}"
+read -p -e "${BYellow} hedef ip adresini girin : ${Reset}" ip
 
 #ANA KISIM
 data=$(curl -s "http://ip-api.com/json/$ip?fields=16982271")
